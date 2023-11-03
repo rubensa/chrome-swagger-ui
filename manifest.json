@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Crome Swagger UI",
+  "description": "Swagger UI packaged as a Chrome extension",
+  "version": "1.0",
+  "author": "rubensa",
+  "icons": {
+    "16": "images/swagger-16x16.png",
+    "32": "images/swagger-32x32.png",
+    "48": "images/swagger-48x48.png",
+    "128": "images/swagger-128x128.png"
+  },
+  "action": {
+    "default_title": "Click to open Swagger UI"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "remove_origin",
+        "enabled": true,
+        "path": "remove_origin.json"
+      }
+    ]
+  },
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "*://*:*/"
+  ]
+}
