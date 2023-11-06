@@ -29,3 +29,5 @@ Once installed click in the extension icon and set the URL of the Open API speci
 
 If the specification is protected by a `Bearer` token, you can set it by clicking the "Authorize Spec" button near the "Explore" button in the top of the page.
 If you leave it empty (or press "Cancel") it will be cleared and not used in any further specification requests.
+
+![Screenshot](./images/screenshot.png)
